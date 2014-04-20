@@ -1,0 +1,96 @@
+/* needed so everything is sized correctly in reference to the viewport */
+html, body, .wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* hide the main navigation */
+.main-nav {
+  display: none;
+}
+
+/* useful for making sure divs are the correct size, even with borders
+   and/or padding */
+div {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.toolbar {
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  text-align: center;
+  line-height: 50px;
+
+  .good {
+    color: #C2D9C1;
+  }
+
+  .warning {
+    color: #F2D399;
+  }
+
+  .bad {
+    color: #F29999;
+  }
+
+  a {
+    color: #ccc;
+    border: none;
+    background: none;
+  }
+
+  a:hover {
+    color: #000;
+  }
+}
+
+.workarea {
+  width: 100%;
+  height: 100%;
+
+  .container {
+    margin-left: 50px;
+    height: 100%;
+    position: relative;
+
+    [name=title] {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 20px;
+      width: 100%;
+      padding: 20px;
+      border: none;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      border-bottom: 2px solid #ccc;
+
+      /* prevents the "glow" when focused */
+      outline: none;
+    }
+
+    .editor {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      padding-top: 65px;
+
+      .raw, .preview {
+        height: 100%;
+        width: 50%;
+        float: left;
+      }
+
+      .preview {
+        border-left: 2px solid #ccc;
+        overflow: auto;
+        padding: 20px;
+      }
+    }
+  }
+}

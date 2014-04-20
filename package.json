@@ -1,0 +1,19 @@
+{
+  "name": "scroll-view-default",
+  "version": "0.0.0",
+  "description": "",
+  "main": "view.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scroll Team",
+  "license": "ISC",
+  "dependencies": {
+    "express3-handlebars": "^0.5.0",
+    "gulp-concat": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.1",
+    "gulp-sass": "^0.7.1"
+  }
+}
