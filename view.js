@@ -4,20 +4,7 @@ module.exports = function(app) {
   hbs = exphbs.create({
     extname: '.hbs',
     defaultLayout: app.config.view.path + '/views/layouts/main',
-    helpers: {
-      // if var === value type conditional
-      when: function(variable, value, options) {
-        if(variable === value) {
-          return options.fn(this);
-        } else {
-          return options.inverse(this);
-        }
-      },
-      // allows passing of JSON data to the client JavaScript
-      json: function(context) {
-        return JSON.stringify(context);
-      }
-    }
+    helpers: require('./helpers')(app.config.view.helpers || {})
   });
 
   app.locals.title = "Scroll - Simple";
