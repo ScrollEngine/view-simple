@@ -1,19 +1,37 @@
 {
   "name": "scroll-view-simple",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0-alpha",
+  "description": "Simple view layer for the Scroll Engine",
   "main": "view.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Scroll Team",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express3-handlebars": "^0.5.0",
     "gulp-concat": "^2.2.0"
   },
   "devDependencies": {
     "gulp": "^3.6.1",
-    "gulp-sass": "^0.7.1"
-  }
+    "gulp-sass": "^0.7.1",
+    "gulp-concat": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ScrollEngine/view-simple.git"
+  },
+  "keywords": [
+    "scroll",
+    "view",
+    "layer",
+    "views",
+    "theme",
+    "ux",
+    "ui"
+  ],
+  "bugs": {
+    "url": "https://github.com/ScrollEngine/view-simple/issues"
+  },
+  "homepage": "https://github.com/ScrollEngine/view-simple"
 }
