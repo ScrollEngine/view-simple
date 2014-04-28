@@ -5,24 +5,15 @@
       <title>{{title}}</title>
       <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" charset="utf-8">
       <script type="text/javascript" src="/js/lib/zepto.min.js"></script>
-      {{#when view 'edit'}}
-      <link rel="stylesheet" href="/css/editor.css" type="text/css" media="screen" charset="utf-8">
-      <script type="text/javascript" src="/js/lib/ace/ace.min.js"></script>
-      <script type="text/javascript" src="/js/lib/marked.min.js"></script>
-      {{/when}}
   </head>
   <body>
     <div class="wrapper">
       <header>
         <nav class="main-nav">
           {{#each nav ~}}
-          <a href="{{url}}">
-            {{~#if icon}}
-              <span class="typcn typcn-{{icon}}"></span>
-            {{~^~}}
-              {{~text}}
-            {{~/if~}}
-          </a>
+          &nbsp;<a href="{{url}}">
+            {{~text}}
+          </a>&nbsp;
           {{~/each}}
         </nav>
       </header>

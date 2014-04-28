@@ -9,14 +9,9 @@
   "author": "Scroll Team",
   "license": "MIT",
   "dependencies": {
-    "express3-handlebars": "^0.5.0",
-    "gulp-concat": "^2.2.0"
+    "express3-handlebars": "^0.5.0"
   },
-  "devDependencies": {
-    "gulp": "^3.6.1",
-    "gulp-sass": "^0.7.1",
-    "gulp-concat": "^2.2.0"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/ScrollEngine/view-simple.git"
