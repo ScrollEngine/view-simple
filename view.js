@@ -18,7 +18,7 @@ module.exports = function(app) {
   return {
     ext: hbs.extname,
     hbs: hbs,
-    registerHelper: exphbs.registerHelper,
-    engine: hbs.engine
+    engine: hbs.engine,
+    helpers: hbs.handlebars.helpers
   };
 };
