@@ -1,6 +1,6 @@
 {
   "name": "scroll-view-simple",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "Simple view layer for the Scroll Engine",
   "main": "view.js",
   "scripts": {

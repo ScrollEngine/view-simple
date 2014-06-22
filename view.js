@@ -18,6 +18,7 @@ module.exports = function(app) {
   return {
     ext: hbs.extname,
     hbs: hbs,
+    registerHelper: exphbs.registerHelper,
     engine: hbs.engine
   };
 };
